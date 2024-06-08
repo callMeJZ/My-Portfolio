@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    
+    <header class="header">
+      <a href="#" class="logo">JZ<span>Dev.</span></a>
+      <nav class="navbar" id="navbar">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#pnc">PNC</a>
+        <a href="#activities">Activities</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <i class="bx bx-menu" id="menu-icon"></i>
+    </header>
+
+    <section class="home" id="home">
+      <div class="home-content">
+        <h3>Hello, It's Me</h3>
+        <h1>JESSA</h1>
+        <h3 class="h3">And I'm a <span class="multiple-text">Computer Science Student</span></h3>
+        <div class="social-media">
+          <a href="https://www.facebook.com/share/2pjX8AiMR2CSq6Zk/?mibextid=qi2Omg"><i class="bx bxl-facebook"></i></a>
+          <a href=""><i class="bx bxl-twitter"></i></a>
+          <a href=""><i class="bx bxl-instagram-alt"></i></a>
+          <a href=""><i class="bx bxl-linkedin"></i></a>
+        </div>
+        <a href="cv_coronado.pdf" class="btn">Download CV</a>
+      </div>
+
+      <div class="home-img">
+        <img src="images/port.png" alt="home" />
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about-img">
+        <img src="images/me.png" alt="about" />
+      </div>
+
+      <div class="about-content">
+        <h2 class="heading">About <span>Me</span></h2>
+        <p>
+          Innovative Individual and Passionate in Learning | Bachelor of Science in Computer Science | Proficient in
+          HTML, CSS, Java, Python, C++, c# | Eager to Bring Problem-Solving and Critical Thinking Skills to Your Team.
+        </p>
+        <a href="#" class="btn">Read More</a>
+      </div>
+    </section>
+
+    <section class="services" id="pnc">
+      <h2 class="heading">About <span>PNC</span></h2>
+
+      <div class="services-container">
+        <div class="services-box">
+          <box-icon name='search' animation='tada' ></box-icon>
+          <h3>PNC Mission</h3>
+          <p>
+            As an institution of higher learning, UC (PnC) is committed to equip individuals with
+            knowledge, skills, and values that will enable them to achieve their professional goals &
+            provide leadership and service for national development.
+          </p>
+        </div>
+
+        <div class="services-box">
+          <h3>PNC Vision</h3>
+          <p>
+            A premier institution of higher learning in Region IV, developing globally-competitive and
+                value-laden professionals and leaders instrumental to community development and
+                nation-building.
+          </p>
+
+        </div>
+      </div>
+    </section>
+
+
+    <section class="activities" id="activities">
+
+      <h2 class="heading">My<span>Activities</span></h2>
+
+      <div class="activities-container">
+        <div class="activities-box">
+            <a href="prelim.html"><h2>Prelim</h2></a>
+        </div>
+
+        <div class="activities-box">
+            <a href="midterm.html"><h2>Midterm</h2></a>
+        </div>
+
+        <div class="activities-box">
+            <a href="finals.html"><h2>Finals</h2></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="heading">Contact <span>Me</span></h2>
+
+      <form action="#">
+        <div class="input-box">
+          <input type="text" placeholder="Full Name" />
+          <input type="email" placeholder="Email Address" />
+        </div>
+
+        <div class="input-box">
+          <input type="number" placeholder="Mobile Number" />
+          <input type="text" placeholder="Email Subject" />
+        </div>
+        <textarea
+          name=""
+          id=""
+          cols="30"
+          rows="10"
+          placeholder="Your Message"
+        ></textarea>
+        <input type="submit" value="Send Message" class="btn" />
+      </form>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-text">
+        <p>Copyright &copy; 2024 by CallmeJZ | All Rights Reserved.</p>
+      </div>
+
+      <div class="footer-iconTop">
+        <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+      </div>
+    </footer>
+
+    <script>
+     document.addEventListener("DOMContentLoaded", function () {
+  const menuIcon = document.getElementById("menu-icon");
+  const navbar = document.getElementById("navbar");
+
+  menuIcon.addEventListener("click", function () {
+    navbar.classList.toggle("active");
+  });
+
+  // Close the menu when a menu item is clicked
+  const menuItems = navbar.querySelectorAll("a");
+  menuItems.forEach(function (menuItem) {
+    menuItem.addEventListener("click", function () {
+      navbar.classList.remove("active");
+    });
+  });
+});
+
+    </script>
+    
+  </body>
+</html>
